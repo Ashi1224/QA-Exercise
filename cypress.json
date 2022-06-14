@@ -1,6 +1,7 @@
 {
 
     "baseUrl": "https://www.epicgames.com/",
+    "projectId": "4zntns",
     "viewportHeight": 768,
     "viewportWidth": 1366,
     "video": false,
@@ -8,6 +9,6 @@
     "reporterOptions": {
         "mochaFile": "results/output.[hash].xml"
     },
-    "failOnStatusCode":false
+    "chromeWebSecurity":false
 
 }
