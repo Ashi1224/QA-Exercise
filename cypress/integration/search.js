@@ -1,17 +1,11 @@
 describe("Search bar Epic Game", function () {
-  // beforeEach(function() {
-  //     cy.server()
-  //     cy.route('POST', 'https://graphql.epicgames.com/graphql').as('visit')
-  // })
-
   it("Should be visible ", function () {
-    cy.visit(`/store/en-u`);
-    cy.wait("@visit").its("status").should("equal", 200);
+    cy.visitUrl();
     cy.get('[data-testid="input-input"]');
   });
 
   it("should have a placeholder and search icon ", function () {
-    cy.visit("/store/en-US/");
+    cy.visitUrl();
     cy.wait("@visit").its("status").should("equal", 200);
     cy.get('[data-testid="input-input"]').should(
       "have.text.placeholder",
