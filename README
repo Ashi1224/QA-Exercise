@@ -1,0 +1,6 @@
+Steps to run the project
+- Git clone 
+- Install Node and NPM packages to your machine
+- On local machine, open terminal run "npm init"
+- Then run "npm run cy:open"
+-Cypress will [pop up and then click on "Run all the spec"]

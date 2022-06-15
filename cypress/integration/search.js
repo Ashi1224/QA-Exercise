@@ -12,14 +12,4 @@ describe("Search bar Epic Game", function () {
       "Search"
     );
   });
-
-  it("Auto search", function () {
-    Cypress.env("gameSearchData").forEach((search) => {
-      cy.visit("/store/en-US/browse");
-      cy.get('[data-testid="input-input"]').type(search.gameName.slice(0, 3));
-      cy.get("div[role=navigation] > div").within(() => {
-        cy.location().its("href").should("include", "journey/home");
-      });
-    });
-  });
 });

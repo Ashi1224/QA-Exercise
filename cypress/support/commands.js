@@ -24,7 +24,7 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 Cypress.Commands.add("visitUrl", () => {
-  cy.visit("https://store.epicgames.com/en-US/browse", {
+  cy.visit("/", {
     headers: {
       Accept: "application/json,text/plain,*/*",
       "user-agent": "axios/0/18/0",

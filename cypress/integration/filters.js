@@ -20,15 +20,3 @@ describe("Filter Epic Game", function () {
     cy.contains("RESET").click();
   });
 });
-
-//   });
-//   it("filter feature should be visible and placeholder should named as keyword", function () {
-//     cy.visitUrl();
-//     cy.location("href").should("include", "/en-US/browse");
-//     cy.get('[data-testid="browse-filters-header-keywords"]')
-//       .should("have.text", "keywords")
-//       .type("Free");
-//     cy.url().should("include", "/Free");
-//     cy.get(".css-cqo4p9").click();
-//   });
-// });
