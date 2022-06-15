@@ -24,7 +24,7 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 Cypress.Commands.add("visitUrl", () => {
-  cy.visit("/", {
+  cy.visit("/browse", {
     headers: {
       Accept: "application/json,text/plain,*/*",
       "user-agent": "axios/0/18/0",

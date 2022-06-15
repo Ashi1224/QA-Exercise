@@ -1,4 +1,4 @@
-describe("Filter Epic Game", function () {
+describe("Filter Games", function () {
   beforeEach(function () {
     cy.clearLocalStorage();
     cy.clearCookies();
