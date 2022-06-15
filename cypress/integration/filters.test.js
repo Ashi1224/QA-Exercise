@@ -15,7 +15,7 @@ describe("Filter Games", function () {
       .invoke("attr", "placeholder")
       .should("contain", "Keywords");
   });
-  it("The resest button should be checked", function () {
+  it("Reset button should be functional", function () {
     cy.get('[data-testid="browse-filters-header-keywords"]').type("price");
     cy.contains("RESET").click();
   });
