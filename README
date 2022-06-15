@@ -1,6 +1,22 @@
-Steps to run the project
-- Git clone 
-- Install Node and NPM packages to your machine
-- On local machine, open terminal run "npm init"
-- Then run "npm run cy:open"
--Cypress will [pop up and then click on "Run all the spec"]
+# QA-Exercise-Hatch
+
+- Integration: Contains test files
+- Support: Contains a support file for globally used actions (Command.js)
+
+```sh
+git clone https://github.com/Ashi1224/QA-Exercise.git
+cd QA-Exercise
+npm i
+```
+
+For cypress run with Test runner...
+
+```sh
+npm run cy:open
+```
+
+For cypress run with CLI- headless...
+
+```sh
+npm run cy:run
+```
